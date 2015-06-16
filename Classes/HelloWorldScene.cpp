@@ -81,7 +81,7 @@ bool HelloWorld::init()
 
 void HelloWorld::b1Click(cocos2d::Ref *ref, ui::TouchEventType touchType)
 {
-    CCLOG("b1Click");
+    CCLOG("b1Click AppCode");
     
 }
 
