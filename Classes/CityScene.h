@@ -6,8 +6,27 @@
 #ifndef __CityScene_H_
 #define __CityScene_H_
 
+#include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
 
-class CityScene {
+USING_NS_CC;
+using namespace ui;
+using namespace cocostudio::timeline;
+
+
+class CityScene : public cocos2d::Layer {
+public:
+    static cocos2d::Scene *createScene();
+
+    virtual bool init();
+
+    CREATE_FUNC(CityScene);
+
+    // ==
+    void Nodes();
+
+    void b1Click(Ref *ref, TouchEventType touchType);
 
 };
 
