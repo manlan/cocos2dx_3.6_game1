@@ -27,15 +27,19 @@ bool HelloWorld::init()
     }
     
     auto rootNode = CSLoader::createNode("MainScene.csb");
+    rootNode->setAnchorPoint(Vec2::ZERO);
 
     addChild(rootNode);
     
     // 获取节点
     auto t1 = (ui::Text *)(rootNode->getChildByName("t1"));
     t1->setString("t1_t1");
+    
+    // tag:4 name:b1
+//    auto b1 = (ui::Button *)(rootNode->getChildByName("b1"));
+    auto b1 = (ui::Button *)(rootNode->getChildByTag(4));
 
-    auto b1 = (ui::Button *)(rootNode->getChildByName("b1"));
-    b1->setScale(5);
+    b1->setScale(2);
     b1->setPosition(Vec2(300, 400));
     
     //=========== 监听2种:============
@@ -43,7 +47,8 @@ bool HelloWorld::init()
     //=== 1
 //    b1->addTouchEventListener(CC_CALLBACK_1(HelloWorld::b1Click, this));
     b1->addTouchEventListener(this, toucheventselector(HelloWorld::b1Click));
-//    b1->addTouchEventListener(const ccWidgetTouchCallback &callback);
+//    b1->addTouchEventListener(const ccWidgetTouchCallback &callback); // TODO:新的监听方式，还不会用的
+
     //=== 2
     /*
     b1->addTouchEventListener([=](Ref* pSender,Widget::TouchEventType type){
