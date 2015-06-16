@@ -43,7 +43,7 @@ bool HelloWorld::init()
     //=== 1
 //    b1->addTouchEventListener(CC_CALLBACK_1(HelloWorld::b1Click, this));
     b1->addTouchEventListener(this, toucheventselector(HelloWorld::b1Click));
-//    b1->addTouchEventListener(const ccWidgetTouchCallback &callback);
+    
     //=== 2
     /*
     b1->addTouchEventListener([=](Ref* pSender,Widget::TouchEventType type){

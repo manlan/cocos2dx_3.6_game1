@@ -27,13 +27,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-//        glview = GLViewImpl::createWithRect("MyGame1", Rect(0, 0, 960, 640));
+        glview = GLViewImpl::createWithRect("MyGame1", Rect(0, 0, 960, 640));
         director->setOpenGLView(glview);
     }
 
     // 设置分辨率
-//    Vec2 size = CCDirector::sharedDirector()->getVisibleSize();
-    Vec2 size = CCDirector::getInstance()->getVisibleSize();
+    Vec2 size = CCDirector::sharedDirector()->getVisibleSize();
     
     // ==1 新的适配屏幕
     if (size.y/size.x < 640.0/960.0) {
