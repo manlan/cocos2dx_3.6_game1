@@ -1,5 +1,5 @@
 #include "HelloWorldScene.h"
-
+#include "CityScene.h"
 
 Scene* HelloWorld::createScene()
 {
@@ -33,7 +33,7 @@ bool HelloWorld::init()
     
     // 获取节点
     auto t1 = (ui::Text *)(rootNode->getChildByName("t1"));
-    t1->setString("t1_t1");
+    t1->setString("HelloWorldScene");
     
     // tag:4 name:b1
 //    auto b1 = (ui::Button *)(rootNode->getChildByName("b1"));
@@ -82,7 +82,16 @@ bool HelloWorld::init()
 void HelloWorld::b1Click(cocos2d::Ref *ref, ui::TouchEventType touchType)
 {
     CCLOG("b1Click AppCode");
-    
+
+    // TODO:错误写法 创建类
+//    auto city = new CityScene();
+    auto city = CityScene::createScene();
+
+    // TODO:切换场景
+
+//    Director::getInstance()->pushScene(city);
+//    Director::getInstance()->popScene();
+    Director::getInstance()->runWithScene(city);
 }
 
 

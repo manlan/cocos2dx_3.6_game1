@@ -3,6 +3,7 @@
 //
 
 #include "CityScene.h"
+#include "HelloWorldScene.h"
 
 Scene *CityScene::createScene() {
     auto scene = Scene::create();
@@ -25,6 +26,11 @@ bool CityScene::init() {
 void CityScene::b1Click(Ref *ref, TouchEventType touchType) {
     CCLOG("CityLayer b1Click");
 
+    auto Hello = HelloWorld::createScene();
+
+//    Director::getInstance()->pushScene(Hello);
+//    Director::getInstance()->popScene();
+    Director::getInstance()->runWithScene(Hello);
 
 }
 
