@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file:///Applications/Cocos/frameworks/cocos2d-x-3.6/prebuilt/ios/libcocos2d iOS.a">
+      <sourceFolder url="file:///Applications/Cocos/frameworks/cocos2d-x-3.6/prebuilt/ios/libcocos2d iOS.a" isTestSource="false" />
+    </content>
+    <content url="file:///Applications/Cocos/frameworks/cocos2d-x-3.6/prebuilt/mac/libcocos2d Mac.a">
+      <sourceFolder url="file:///Applications/Cocos/frameworks/cocos2d-x-3.6/prebuilt/mac/libcocos2d Mac.a" isTestSource="false" />
+    </content>
+    <content url="file:///Applications/Xcode6.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libz.dylib">
+      <sourceFolder url="file:///Applications/Xcode6.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/libz.dylib" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Classes">
+      <sourceFolder url="file://$MODULE_DIR$/../Classes" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../Resources">
+      <sourceFolder url="file://$MODULE_DIR$/../Resources" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
