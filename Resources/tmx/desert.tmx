@@ -7,8 +7,8 @@
   </data>
  </layer>
  <objectgroup name="grass">
-  <object id="7" x="433.333" y="727.273"/>
-  <object id="8" x="439.394" y="775.758"/>
-  <object id="9" x="439.394" y="836.364"/>
+  <object id="7" name="player1" x="433.333" y="727.273"/>
+  <object id="8" name="player2" x="439.394" y="775.758"/>
+  <object id="9" name="player3" x="439.394" y="836.364"/>
  </objectgroup>
 </map>

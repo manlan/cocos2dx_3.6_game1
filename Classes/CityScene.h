@@ -30,6 +30,7 @@ public:
 
     // == tmx
     void initTMX();
+    TMXTiledMap _tileMap;
 };
 
 

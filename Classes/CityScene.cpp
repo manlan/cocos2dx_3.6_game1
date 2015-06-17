@@ -65,4 +65,35 @@ void CityScene::initTMX() {
     _tileMap->setPosition(Vec2::ZERO);
     // 将地图添加为当前层的子节点
     this->addChild(_tileMap, -1);
+
+    // == 获取单独对象objects
+//    auto objGroup = _tileMap->getObjectGroup("grass");
+////    ValueMap map = objGroup->getObject("player1");
+//    int iPosX = map.at("x").asInt();
+//    int iPosY = map.at("y").asInt();
+//
+//    auto _sprite = Sprite::create("res/Default/Button_Normal.png");
+//    _sprite->setPosition(Vec2(iPosX, iPosY));
+//    this->addChild(_sprite);
+    
+    // == 批量获取对象
+    auto objGroup = _tileMap->getObjectGroup("grass");
+    ValueVector objects = objGroup->getObjects();
+    for (const auto v : objects)
+    {
+        const ValueMap dict = v.asValueMap();
+        
+//        int id = dict.at("id").asInt();
+//        CCLOG("id:%d", id);
+        
+//        float fShowTime = dict.at("showTime").asFloat();
+        
+        int iPosX = dict.at("x").asInt();
+        int iPosY = dict.at("y").asInt();
+        
+        auto _sprite = Sprite::create("res/Default/Button_Normal.png");
+        _sprite->setPosition(Vec2(iPosX, iPosY));
+        this->addChild(_sprite);
+    }
+    
 }
