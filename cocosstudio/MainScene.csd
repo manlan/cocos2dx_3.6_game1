@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Default" ActionTag="953446860" Tag="5" IconVisible="False" ctype="SpriteObjectData">
+          <AbstractNodeData Name="bg" ActionTag="953446860" Tag="5" IconVisible="False" ctype="SpriteObjectData">
             <Size X="960.0000" Y="640.0000" />
             <AnchorPoint />
             <Position />
@@ -43,7 +43,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="t1_0" ActionTag="783160767" Tag="5" IconVisible="False" LeftMargin="4.6529" RightMargin="841.3470" TopMargin="589.7047" BottomMargin="8.2954" FontSize="36" LabelText="Bottom" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
+          <AbstractNodeData Name="t1_0" ActionTag="783160767" Tag="5" IconVisible="False" LeftMargin="4.6529" RightMargin="841.3471" TopMargin="589.7046" BottomMargin="8.2954" FontSize="36" LabelText="Bottom" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
             <Size X="114.0000" Y="42.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="61.6529" Y="29.2954" />
@@ -54,7 +54,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="t1_0_0" ActionTag="-443431493" Tag="7" IconVisible="False" LeftMargin="836.3464" RightMargin="9.6536" TopMargin="3.1344" BottomMargin="594.8656" FontSize="36" LabelText="Top" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
+          <AbstractNodeData Name="t1_0_0" ActionTag="-443431493" Tag="7" IconVisible="False" LeftMargin="864.3464" RightMargin="37.6536" TopMargin="3.1344" BottomMargin="594.8656" FontSize="36" LabelText="Top" OutlineSize="1" ShadowOffsetX="2" ShadowOffsetY="-2" ctype="TextObjectData">
             <Size X="58.0000" Y="42.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="893.3464" Y="615.8656" />

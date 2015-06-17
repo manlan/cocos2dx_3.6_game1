@@ -28,6 +28,8 @@ public:
 
     void b1Click(Ref *ref, TouchEventType touchType);
 
+    // == tmx
+    void initTMX();
 };
 
 

@@ -20,6 +20,7 @@ bool CityScene::init() {
     }
 
     this->Nodes();
+    this->initTMX();
     return true;
 };
 
@@ -39,6 +40,10 @@ void CityScene::Nodes() {
     rootNode->setAnchorPoint(Vec2::ZERO);
     this->addChild(rootNode);
 
+    // 隐藏背景
+    auto bg = (Sprite *) (rootNode->getChildByName("bg"));
+    bg->setVisible(false);
+
     //获取节点
     auto t1 = (ui::Text *) (rootNode->getChildByName("t1"));
     t1->setString("CityLayer");
@@ -50,4 +55,14 @@ void CityScene::Nodes() {
     b1->addTouchEventListener(this, toucheventselector(CityScene::b1Click));
 
 
+}
+
+void CityScene::initTMX() {
+    // 调用TMXTiledMap的函数读取TileMap.tmx文件创建一个瓦片地图对象
+    auto _tileMap = TMXTiledMap::create("tmx/desert.tmx");
+    // 把地图的锚点和位置都设置为原点，这样可以使地图的左下角与屏幕的左下角对齐
+    _tileMap->setAnchorPoint(Vec2::ZERO);
+    _tileMap->setPosition(Vec2::ZERO);
+    // 将地图添加为当前层的子节点
+    this->addChild(_tileMap, -1);
 }

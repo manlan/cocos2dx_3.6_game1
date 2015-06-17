@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="32" tileheight="32" nextobjectid="10">
+ <tileset firstgid="1" source="desert.tsx"/>
+ <layer name="Ground" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmNkOgjAQRas+uJC4JuISEcQFd/7/6xwjBDKpdAptLZGHEyQp9nhngIkeY8zTyBAYAWPN+5ThwfHbWuBVl/zeWc0BF1hY4MOjBbSBDvLWsdcSWEmwBvrAAHAMZBEAOwlCjX5Rgd8euACHH/oV5RcS8zThd5T0iw34xcgL+93Yp//vhvPDPYfPRfXEfanCj3cfRCi/9LPID+eqKr8TOk99ZPPTXV/siTkn9aNyVeDXTeix7F1URIe4LmVT0W/Esvki/a1FOMR1vOvK+Lksmy8mwFTAjLiOd53O3jONz/hzjqxnrNnRVG5lZjMV+4ryeyRHyrMz//4Jifurqi/FL0y+L1DsJ3J8/tDvW4a4r23Oj+qXny9M9d9Twg9nadv9wau1zX4m8yszm6nw+zd8CxzqAs7Ktv8Gmxo3NFTjBfrHuLU=
+  </data>
+ </layer>
+ <objectgroup name="grass">
+  <object id="7" x="433.333" y="727.273"/>
+  <object id="8" x="439.394" y="775.758"/>
+  <object id="9" x="439.394" y="836.364"/>
+ </objectgroup>
+</map>
